@@ -3,7 +3,7 @@ import AAA from "../../components/AAA"
 import BBB from "../../components/BBB"
 
 
-const randomIntFromInterval = (min: number, max: number): string => {
+export const randomIntFromInterval = (min: number, max: number): string => {
     return Math.floor(Math.random() * (max - min + 1) + min).toString()
 }
 
@@ -21,6 +21,8 @@ export default () => {
             <BBB />
             <button onClick={() => reandmTest()}>REMOVE</button>
 
+            <br />
+            <p>{test}</p>
         </>
     ), [test])
 }
